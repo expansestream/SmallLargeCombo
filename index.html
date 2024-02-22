@@ -24,7 +24,7 @@
             img1.width = "375";
             var myDiv = document.getElementById("smallScreen");
             myDiv.appendChild (img1);
-          } else if (600 > screen.width < 1920) {
+          } else if (screenWidth >= 600 && screenWidth < 1920) {
             const img2 = document.createElement("iframe");
             img2.src = "https://expansestream.github.io/largeScreen/";
             img2.alt = "XLarge Screen";
@@ -32,7 +32,7 @@
             img2.width = "1480";
             var myDiv = document.getElementById("largeScreen");
             myDiv.appendChild (img2);
-          } else if (1920 >=screen.width) {
+          } else if (screenWidth >= 1920) {
             const img3 = document.createElement("iframe");
             img3.src = "https://expansestream.github.io/xlargeScreen/";
             img3.alt = "Large Screen";
